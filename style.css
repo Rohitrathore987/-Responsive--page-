@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans';
+
+}
+html,body{
+
+}
+#main{
+    display: flex;
+width: 100%;
+height: 100vh;
+
+
+}
+.left{
+    position: relative;
+    width: 40%;
+    height: 100vh;
+    
+}
+.lnav{
+    display: flex;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: space-between;
+ 
+}
+.lnavr{
+    display: flex;
+    text-align: center;
+}
+.lnavr a{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 15px;
+    
+}
+
+.ltext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.ltext h1{
+    font-size: 90px;
+    font-weight: 900;
+    margin-bottom: 20px;
+
+}
+.ltext p{
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    line-height: 1.5;
+    opacity: .6;
+}
+.ltext a{
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #a39f9f;
+    
+}
+.right{
+ 
+ width: 60%;
+ height: 100%;
+ background-color:salmon;
+}
+.rtop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: brown;
+}
+.rtopl{
+    width: 50%;
+    height: 100%;
+ background-image: url(https://media.istockphoto.com/id/1338112281/photo/slice-of-guava-with-a-mixture-of-salt-and-chili-powder-on-a-plate-preserve-guava-fruit-spicy.jpg?s=612x612&w=0&k=20&c=V7-pyF6tOwKb6G6iw4on5dK8-CHE_VrU_x2ZRtOZNyg=);
+background-size: cover;
+background-position: center;
+
+
+}
+.rtopr{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://media.istockphoto.com/id/1283719915/photo/cute-little-girl-holding-an-guava-in-her-hand-and-sitting-inside-a-refrigerator.jpg?s=612x612&w=0&k=20&c=UxCqQRcsrOc8gBcb0kh8l4Qkr7rp5y3_81oYhto09a8=);
+    background-size: cover;
+    background-position: left;
+}
+.rbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://media.istockphoto.com/id/2075234579/photo/shopkeepers-sell-fresh-fruits-juice-smoothies-and-shakes.jpg?s=612x612&w=0&k=20&c=RuBMaaQmPTnwcrqUQ3Vx8Ai9MQQFP7-C-r5efGaGI58=);
+   background-position: center;
+   background-size: cover;
+}
+@media (max-width:780px) {
+    #main{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .left{
+        width: 100%;
+
+    }
+    .right{
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    #main{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    .ltext h1{
+        margin-top: 30px;
+    }
+    .ltext a{
+        margin-bottom: 10px;
+    }
+    
+}
